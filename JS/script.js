@@ -181,3 +181,37 @@ function writeYourGenres() {
     }
 }
 writeYourGenres();
+
+
+
+
+/* 1) Создайте функцию, которая будет вычислять объем и площадь полной поверхности куба  */
+
+function calculateVolumeAndArea(length) {
+    if(typeof(length) !== 'number' || length <=0  || !Number.isInteger(length)) {
+        return "При вычислении произошла ошибка";
+    }
+    let volume=0,
+        area=0;
+
+        volume = length * length * length;
+        area = 6 * (length * length);
+        return `Объём куба: ${volume}, площадь всей поверхности ${area}`;
+}
+calculateVolumeAndArea(6);
+
+/* 2) Напишите функцию, которая будет определять номер купе по переданному ей номеру места. Наглядно: */
+
+function getCoupeNumber(place) {
+    if(typeof(place)!== 'number' || !Number.isInteger(place) || place < 0) {
+        return "Ошибка. Проверьте правильность введенного номера места";
+    } 
+    
+    if(place === 0 || place > 36 ) {
+        return "Таких мест в вагоне не существует";
+    }
+
+    let roomate = place / 4;
+    return Math.ceil(roomate);
+}
+getCoupeNumber (13);

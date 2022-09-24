@@ -134,7 +134,7 @@ let personalMovieDB = {
 
 function rememberMyFilms() {
     for (let i = 0; i<2; i++){
-        const a = prompt('Один из последних просмотренных фильмов?', ''),
+        const a = prompt('Один из последних просмотренных фильмов?', '').trim(),
               b = prompt('На сколько оцените его?', '');
     
         if (a != null && b != null && a != '' && b != '' && a.length < 50)  {
@@ -187,7 +187,7 @@ writeYourGenres();
 
 /* 1) Создайте функцию, которая будет вычислять объем и площадь полной поверхности куба  */
 
-function calculateVolumeAndArea(length) {
+/* function calculateVolumeAndArea(length) {
     if(typeof(length) !== 'number' || length <=0  || !Number.isInteger(length)) {
         return "При вычислении произошла ошибка";
     }
@@ -202,7 +202,7 @@ calculateVolumeAndArea(6);
 
 /* 2) Напишите функцию, которая будет определять номер купе по переданному ей номеру места. Наглядно: */
 
-function getCoupeNumber(place) {
+/* function getCoupeNumber(place) {
     if(typeof(place)!== 'number' || !Number.isInteger(place) || place < 0) {
         return "Ошибка. Проверьте правильность введенного номера места";
     } 
@@ -214,4 +214,4 @@ function getCoupeNumber(place) {
     let roomate = place / 4;
     return Math.ceil(roomate);
 }
-getCoupeNumber (13);
+getCoupeNumber (13); */

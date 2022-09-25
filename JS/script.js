@@ -219,7 +219,7 @@ getCoupeNumber (13); */
 
 // Task JS
 
-const personalPlanPeter = {
+/* const personalPlanPeter = {
     name: "Peter",
     age: "29",
     skills: {
@@ -229,13 +229,13 @@ const personalPlanPeter = {
             php: '10%'
         },
         exp: '1 month'
-    },
+    }, */
 /*     3) Создайте метод showAgeAndLangs внутри объекта personalPlanPeter.
  При его вызове метод будет принимать в себя объект и возвращать строку в нужном виде.
 Пример:
 personalPlanPeter.showAgeAndLangs(personalPlanPeter)
 => 'Мне 29 и я владею языками: RU ENG' */
-    showAgeAndLangs: function(plan) {
+   /*  showAgeAndLangs: function(plan) {
         const {age} = plan;
         const {languages} = plan.skills;
         let str = `Мне ${age} и я владею языками: `;
@@ -247,15 +247,15 @@ personalPlanPeter.showAgeAndLangs(personalPlanPeter)
         return str;
     }
 };
-
+ */
 //1) Напишите функцию showExperience, которая будет принимать в себя объект со
 // всеми данными и возвращать строку с опытом.
 
-function showExperience(plan) {
+/* function showExperience(plan) {
     const {exp} = plan.skills;
     return exp;
 }
-
+ */
 /* 2) Напишите функцию showProgrammingLangs, которая будет принимать в себя объект со
  всеми данными и возвращать строку в нужном виде.
 Пример:
@@ -264,11 +264,15 @@ showProgrammingLangs(personalPlanPeter)  =>
 Причем функция должна работать вне зависимости от количества языков.
 Если ни один не указан, то возвращается пустая строка. */
 
-function showProgrammingLangs(plan) {
+/* function showProgrammingLangs(plan) {
     let str = '';
     const {programmingLangs} = plan.skills;
     for (let key in programmingLangs) {
-        str += `Язык ${key} изучен на ${programmingLangs[key]}/n`;
+        str += `Язык ${key} изучен на ${programmingLangs[key]}\n`;
     }
     return str;
-}
+} */
+
+
+// Task Array
+
